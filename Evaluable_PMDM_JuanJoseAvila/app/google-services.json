@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "624081725490",
+    "project_id": "ligasapp-d6424",
+    "storage_bucket": "ligasapp-d6424.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624081725490:android:f01663af77db8a2927f42b",
+        "android_client_info": {
+          "package_name": "com.example.evaluable_pmdm_juanjoseavila"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDWODMnL_gryAjGlaw1yFOCvs0o-9vp5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

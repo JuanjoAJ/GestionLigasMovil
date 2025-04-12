@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/background"
+    android:padding="48dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/register_title"
+        android:textSize="24sp" />
+
+    <EditText
+        android:drawableStart="@drawable/user_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editMail"
+        android:hint="@string/introduce_mail"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:drawableStart="@drawable/padlock_logo"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPass"
+        android:hint="@string/introduce_password"
+        android:gravity="center"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:text="@string/register"/>
+
+</LinearLayout>

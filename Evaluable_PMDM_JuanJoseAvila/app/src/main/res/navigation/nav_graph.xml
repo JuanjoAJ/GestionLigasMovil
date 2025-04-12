@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        tools:layout="@layout/fragment_login"
+        android:id="@+id/loginFragment"
+        android:name="com.example.evaluable_pmdm_juanjoseavila.ui.fragment.LoginFragment"
+        android:label="@string/loginToolbar" >
+        <action
+            android:id="@+id/action_loginFragment_to_leagueFragment"
+            app:destination="@id/leagueFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registroFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_register"
+        android:id="@+id/registroFragment"
+        android:name="com.example.evaluable_pmdm_juanjoseavila.ui.fragment.RegisterFragment"
+        android:label="@string/registerToolbar" >
+        <action
+            android:id="@+id/action_registerFragment_to_leagueFragment"
+            app:destination="@id/leagueFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_league"
+        android:id="@+id/leagueFragment"
+        android:name="com.example.evaluable_pmdm_juanjoseavila.ui.fragment.LeagueFragment"
+        android:label="Menú de Ligas" >
+        <action
+            android:id="@+id/action_leagueFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/action_leagueFragment_to_teamFragment"
+            app:destination="@id/teamFragment" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_team"
+        android:id="@+id/teamFragment"
+        android:name="com.example.evaluable_pmdm_juanjoseavila.ui.fragment.TeamFragment"
+        android:label="Equipos de la liga" >
+        <argument
+            android:name="league"
+            app:argType="com.example.evaluable_pmdm_juanjoseavila.model.League"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/fragment_fav"
+        android:id="@+id/favFragment"
+        android:name="com.example.evaluable_pmdm_juanjoseavila.ui.fragment.FavFragment"
+        android:label="Tus equipos favoritos" />
+</navigation>
